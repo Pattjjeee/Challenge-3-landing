@@ -1,0 +1,211 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+	height: 100vh;
+	color: white;
+	font-family: all-round-gothic, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	width: 100vw;
+	margin-bottom: 100px;
+}
+
+header {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+#logo figure {
+	width: 25%;
+}
+
+img{
+	max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+.p-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+
+h1 {
+	font-size: 4.8em;
+	font-weight: 100;
+}
+
+body {
+	background: rgb(0,0,0);
+	background: linear-gradient(180deg, rgba(0,0,0,100) 0%, rgba(95,95,95,1) 100%);
+}
+
+/*Map styling*/
+
+#mapContainer {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+#map {
+  height: 50vh;
+  width: 80vw;
+  border-radius: 15px;
+}
+
+.coordinaten {
+	display: flex;
+	justify-content: center;
+	margin-top: 45px;
+}
+
+.coordinaten2 {
+	margin-top: 15px;
+}
+
+#beschrijving {
+	line-height: 1.5;
+	display: flex;
+	justify-content: center;
+	margin:auto;
+	margin-top: 20px;
+	flex-wrap: wrap;
+}
+
+#searchbar {
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+}
+
+.weersinfo {
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+}
+
+
+
+
+/*----------------Tablet style---------------------*/
+
+@media only screen and (min-width: 845px){
+
+	#logo figure {
+		width: 15%;
+	}
+
+	.p-container p {
+		font-size: 1.2em;
+	}
+
+	.gridItem {
+		display: flex;
+		justify-content: center;
+	}
+
+
+}
+
+
+/*----------------Laptop style---------------------*/
+
+@media only screen and (min-width: 1001px){
+
+	#logo figure {
+		width: 13%;
+	}
+
+	.p-container p {
+		font-size: 1.3em;
+	}
+
+	#map {
+		height: 55vh;
+	}
+
+	#megaContainer {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+		"map info"
+	}
+
+	#map {
+	  height: 60vh;
+	  width: 40vw;
+	  grid-area: map;
+	}
+
+	.infoContainer {
+		grid-area: info;
+	}
+
+	.gridItem {
+		display: flex;
+		justify-content: left;
+		margin-bottom: 50px;
+	}
+
+	.weersinfo {
+		margin-bottom: 15px;
+	}
+
+	#beschrijving {
+		margin-bottom: 20px;
+		margin-left: 0;
+		justify-content: left;
+	}
+
+	#searchbar {
+		display: flex;
+		justify-content: left;
+	}
+
+
+
+}
+
+
+ /*----------------Desktop style---------------------*/
+
+@media only screen and (min-width: 1450px){
+
+	#logo figure {
+		width: 12%;
+	}
+
+	.p-container p {
+		font-size: 1.4em;
+	}
+
+	#map {
+  		height: 60vh;
+ 	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

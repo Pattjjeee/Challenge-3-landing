@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SpaceX Mars landingslocatie</title>
+		<link type="text/css" href="styles/main.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://use.typekit.net/bav5xax.css">
+		<link rel="icon" type="image/png" href="images/icon.png"/>
+		<script type="text/javascript" src="scripts/script.js" defer></script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> -->
+		<link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet">
+ 		<script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+ 		<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+		<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css">
+		<link href="styles/main.css" rel="stylesheet" />
+		  <!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+		<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+	</head>
+	<body id="body">
+		<header id="logo">
+			<figure>
+				<img src="images/SpaceXLogoRebrandWhite.png" alt="Space X logo" />
+			</figure>
+		</header>
+		<div class="p-container">
+			<p>Plan de Space X landing</p>
+		</div>
+		<div id="megaContainer">
+			<section id="mapContainer">
+				<div id="map"></div>
+			</section>
+
+			<div class="infoContainer">
+				<div class="coordinaten gridItem">
+					<h3>Coördinaten voor de landing:</h3>
+				</div>
+				<section class="coordinaten coordinaten2 gridItem">
+		            <p>Longtitude <span id="longSpan">???</span><br>Latitude <span id="latSpan">???</span></p>
+		        </section>
+		        <section id="beschrijving" class="gridItem">
+		        	<p>Waar zou u willen landen?</p>
+		        </section>
+
+		        <section id="searchbar" class="gridItem">
+		        	<div id="geocoder"></div>
+		        </section>
+
+		        <section class="weersinfo gridItem">
+		            <h2>Het weer</h2>
+		        </section>
+		        <div class="weersinfo gridItem">
+		       		<div id="weather"></div>
+		        </div>
+	        </div>
+	    </div>
+
+
+	</body>
+</html>
